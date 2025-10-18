@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap' />
+
+    <title>Hotel Room Reservation</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Chesterfield Grand Hotel</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <label for="name">1. Name</label><br />
+                <input type="text" id="name" name="name" placeholder="Enter your name"/><br />
+
+                <label for="gender">2. Gender</label>
+                <select id="gender" name="gender" placeholder="Choose"><br />
+                    <option value="" selected="selected" disabled="disabled">Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+                </select><br />
+
+                <label for="email">3. Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"/><br />
+
+                <label for="phone">4. Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number"/><br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Reservation Details</legend>
+                <label for="resName">1. Reservation Name</label>
+                <input type="text" id="resName" name="resName" placeholder="Enter reservation name"/><br />
+
+                <label for="bookingDate">2. Booking Date</label>
+                <input type="date" id="bookingDate" name="bookingDate" /><br />
+
+                <label for="roomType">3. Room Type</label>
+                <select id="roomType" name="roomType"><br />
+                    <option value="" selected="selected" disabled="disabled">Select</option>
+                    <option>Deluxe</option>
+                    <option>Suite</option>
+                    <option>Family</option>
+                </select><br />
+
+                <label for="bedType">4. Bed Type</label>
+                <select id="bedType" name="bedType"><br />
+                    <option value="" selected="selected" disabled="disabled">Select</option>
+                    <option>Single</option>
+                    <option>Double</option>
+                </select><br />
+
+                <label>5. Breakfast</label>
+                <div class="radioGroup">
+                    <label><input type="radio" id="withBreakfast" name="breakfast" value="with" />With Breakfast</label>
+                    <label><input type="radio" id="withOutBreakfast" name="breakfast" value="without" />Without Breakfast</label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Payment</legend>
+                <label for="checkin">1. Check-in Date</label>
+                <input type="date" id="checkin" name="checkin"/><br />
+
+                <label for="checkout">2. Check-Out Date</label>
+                <input type="date" id="checkout" name="checkout"/><br />
+
+                <label for="payment">3. Payment Method</label>
+                <select id="payment" name="payment">
+                    <option value="" selected="selected" disabled="disabled">Select</option>
+                    <option>Cash</option>
+                    <option>Credit Card</option>
+                    <option>Debit Card</option>
+                    <option>Transfer</option>
+                    <option>QRIS</option>
+                </select><br />
+            </fieldset>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>

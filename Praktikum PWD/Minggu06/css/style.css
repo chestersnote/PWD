@@ -1,0 +1,96 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #1a1c2e; */
+    color: #e0e0e0;
+    padding: 25px;
+    justify-content: center;
+    background-image: url('asset/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 80%;
+    background-color: rgba(43, 46, 74, 0.97);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+fieldset{
+    border: 1.5px solid #4a4e6e;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+legend{
+    background-color: #FEB21A;
+    border: none;
+    border-radius: 10px;
+    color: #2B2E4A;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+label{
+    margin-bottom: 8px;
+    color: #c6c6de;
+}
+
+p{
+    font-weight: 700;
+}
+
+input[type="text"],input[type="date"],input[type="email"],select{
+    padding: 10px;
+    margin: 10px 20px;
+    width: 90%;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    color :#FFFFFF;
+    border-radius: 5px;
+    background-color: #2B2E4A;
+}
+
+input[type="text"]:hover,input[type="date"]:hover,input[type="email"]:hover,select:hover{
+    border-color: #E84545;
+}
+
+.radioGroup label{
+    margin: 25px 15px;
+}
+
+.radioGroup label:hover{
+    color: #E84545;
+}
+
+input[type="radio"]{
+    margin-right: 10px;
+    accent-color: #E84545;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    background-color: #E84545;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease, tansform 0.3s ease;
+}
+
+input[type="submit"]:hover{
+    background-color: #903749;
+    transform: scale(1.02);
+}

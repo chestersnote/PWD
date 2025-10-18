@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Room Hotel Reservation</title>
+</head>
+
+<body>
+    <h1>Reservation Hotel Room</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset style="width: 300px; padding: 30px;">
+            <legend>Personal Data</legend>
+            <label for="name">1. Name</label><br />
+            <input type="text" id="name" name="name" size="30" style="width: 90%; margin-left: 15px;"/><br />
+
+            <label for="gender">2. Gender</label><br />
+            <input type="text" id="gender" name="gender" size="30" style="width: 90%; margin-left: 15px;"/><br />
+
+            <label for="email">3. Email Address</label><br />
+            <input type="email" id="email" name="email" size="30" style="width: 90%; margin-left: 15px;"/><br />
+
+            <label for="phone">4. Phone Number</label><br />
+            <input type="text" id="phone" name="phone" size="30" style="width: 90%; margin-left: 15px;"/><br />
+        </fieldset>
+
+        <h3>Reservation Room Form</h3>
+        <div style="margin-left: 20px;">
+                <label for="resName">1. Reservation Name</label><br />
+            <input type="text" id="resName" name="resName" size="30" style="width: 275px; margin-left: 20px;"/><br />
+
+            <label for="bookingDate">2. Booking Date</label><br />
+            <input type="text" id="bookingDate" name="bookingDate" size="30" style="width: 275px; margin-left: 20px;"/><br />
+
+            <label for="roomType">3. Room Type</label><br />
+            <select id="roomType" name="roomType" style="margin-left: 20px;"><br />
+                <option>Deluxe</option>
+                <option>Suite</option>
+                <option>Family</option>
+            </select><br />
+
+            <label for="bedType">4. Bed Type</label><br />
+            <select id="bedType" name="bedType" style="margin-left: 20px;"><br />
+                <option>Single</option>
+                <option>Double</option>
+            </select><br />
+
+            <label>5. Breakfast</label><br />
+            <label><input type="radio" id="withBreakfast" name="breakfast" value="with" style="margin-left: 20px;"/>With Breakfast</label>
+            <label><input type="radio" id="withOutBreakfast" name="breakfast" value="without" style="margin-left: 20px;"/>Without Breakfast</label><br /><br />
+        </div>
+        
+        <fieldset style="width: 300px; padding: 30px;">
+            <legend>Payment</legend>
+            <label for="checkin">1. Check-in Date</label><br />
+            <input type="text" id="checkin" name="checkin" size="30" style="width: 90%; margin-left: 15px;"/><br />
+
+            <label for="checkout">2. Check-Out Date</label><br />
+            <input type="text" id="checkout" name="checkout" size="30" style="width: 90%; margin-left: 15px;"/><br />
+
+            <label for="payment">3. Payment Method</label><br />
+            <select id="payment" name="payment" style="margin-left: 15px;">
+                <option>Cash</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+                <option>Transfer</option>
+                <option>QRIS</option>
+            </select><br />
+        </fieldset>
+
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
